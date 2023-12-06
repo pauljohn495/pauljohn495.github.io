@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-size: cover;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-image: url('forest.jpg'); 
+  resize: vertical;
+  background-color: #171616;
+  height: 140vmax;
+}
+ .container{
+  width: 95%;
+  height: 600px;
+  margin: 0;
+}
+.break{
+  position: relative; top: -665px;
+  padding: 30px;
+  color: rgb(132, 132, 132);
+  z-index: -1;
+  border-color: #00000000;
+  
+}
+.nav-links{ /*CSS of Navigation buttons*/
+  display: flex;
+  align-items: center;
+ text-align: center;  
+ margin: 0;
+  padding: 20px 500px;
+  border-radius: 12px;
+  position: relative; top: -686px; left: 500px
+}
+.nav-links li{
+  list-style: none;
+  margin: 0 30px;
+}
+.nav-links li a{
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  font-family: fantasy;
+  text-decoration: none;
+}
+.nav-links li a:before{ /*Hover animation for the navigation*/
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #ffffff;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before{
+  width: 100%;
+}
+.nav-links li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease-out;
+}
+.nav-links li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.nav-links li.upward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+.nav-links li.upward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.nav-links li.front a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+.nav-links li.front a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.nav-links li.center a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+.nav-links li.center a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+/*CSS of the boxes, i use 15px for the box-shadow so people can slightly notice the image is inside the box*/
+.lesson1{ 
+  width: 30%;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative; top: -555px; left: 20px;
+}
+.lesson2{ 
+  width: 30%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative; top: -1055px; left: 530px;
+}
+.lesson3{ 
+  width: 30%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative; top: -1555px; left: 1030px;
+}
+.lesson4{
+  width: 40%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative; top: -1500px; left: 120px;
+}
+.lesson5{
+  width: 40%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative; top: -2000px; left: 790px;
+}
+.lesson6{
+  width: 50%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative; top: -1800px; left: 395px;
+}
+.chapter1{ /*CSS of the sizes of images*/
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  animation: fadeleft 1s ease-in forwards;
+  position: relative; top: 0px;
+  filter: brightness(100%);
+}
+.chapter2{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  animation: fadein 1s ease-in forwards;
+  position: relative; top: 0px;
+  filter: brightness(100%);
+}
+.chapter3{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: faderight 1s ease-in forwards;
+  display: flex;
+  position: relative; top: 0px;
+  filter: brightness(100%);
+}
+.chapter4{
+  width: 100%;
+  height: 100%;
+  animation: fadeleft 1s ease-in forwards;
+  display: flex;
+  position: relative; top: 0px;
+  filter: brightness(100%);
+
+}
+.chapter5{
+  width: 100%;
+  height: 100%;
+  animation: faderight 1s ease-in forwards;
+  display: flex;
+  position: relative; top: 0px;
+  filter: brightness(100%);
+}
+.chapter6{
+  width: 100%;
+  height: 100%;
+  animation: fadebot 1s ease-in forwards;
+  display: flex;
+  position: relative; top: 0px;
+  filter: brightness(100%);
+}
+.chapter1{
+  z-index: -1;
+}
+/*i put hover on each boxes to have more spaces*/
+.text1{
+  opacity: 0;
+  transition: .2s ease;
+  background-image: url('forest.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
+.lesson1:hover .text1 {
+  opacity: 1;
+}
+.chapter2{
+  z-index: -1;
+}
+.text2{
+  opacity: 0;
+  transition: .2s ease;
+  background-image: url('forest.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
+.lesson2:hover .text2 {
+  opacity: 1;
+}
+.chapter3{
+  z-index: -1;
+}
+.text3{
+  opacity: 0;
+  transition: .2s ease;
+  background-image: url('forest.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
+.lesson3:hover .text3 {
+  opacity: 1;
+}
+.chapter4{
+  z-index: -1;
+}
+.text4{
+  opacity: 0;
+  transition: .2s ease;
+  background-image: url('forest.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
+.lesson4:hover .text4 {
+  opacity: 1;
+}
+.chapter5{
+  z-index: -1;
+}
+.text5{
+  opacity: 0;
+  transition: .2s ease;
+  background-image: url('forest.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
+.lesson5:hover .text5 {
+  opacity: 1;
+}
+.chapter6{
+  z-index: -1;
+}
+.text6{
+  opacity: 0;
+  transition: .2s ease;
+  background-image: url('forest.jpg');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
+.lesson6:hover .text6 {
+  opacity: 1;
+}
+.fav{ /*CSS of where i put the text inside of the box*/
+  width: 50%;
+  height: 70px;
+  background-color: rgba(139, 139, 139, 0);
+  position:relative; top: 65px; left: 400px;
+  z-index: -1;
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5), 0 -4px 4px -4px rgba(0, 0, 0, 0.5);
+}
+.foot{ /*CSS of footer, i use position relative so that i can easily move the element*/
+  border-top:3px solid rgb(255, 255, 255);
+  position: relative; top: -1750px; left: 400px;
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+.fav2{
+  width: 60%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0);
+  position:relative; top: 1215px; left: 350px;
+  z-index: -1;
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5), 0 -4px 4px -4px rgba(0, 0, 0, 0.5);
+}
+@keyframes faderight{
+  from{
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeleft{
+  from{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadein{
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadebot{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logo{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  left: 22px;
+  top: -8px;
+}

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-size: cover;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-image: url('forest.jpg'); 
+    resize: vertical;
+    background-color: #171616;
+    height: auto;
+}
+.break{
+    position: relative; top: -665px;
+    padding: 30px;
+    color: rgb(132, 132, 132);
+    z-index: -1;
+    border-color: #00000000;
+    
+  }
+  .nav-links{ /*This is where i position my navigation buttons */
+    display: flex;
+    align-items: center;
+   text-align: center;  
+   margin: 0;
+   position: relative; top: -2605px; left: -20px;
+   border-radius: 12px;
+    float: right;
+  }
+  .nav-links li{
+    list-style: none;
+    margin: 0 30px;
+  }
+  .nav-links li a{
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    font-family: fantasy;
+    text-decoration: none;
+  }
+  .nav-links li a:before{ /* Hover effects*/
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #ffffff;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+  }
+  .nav-links li a:hover:before{
+    width: 100%;
+  }
+  .nav-links li.forward a:before{
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease-out;
+  }
+  .nav-links li.forward a:hover:before{
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+  .nav-links li.upward a:before{
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+  }
+  .nav-links li.upward a:hover:before{
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+  .nav-links li.front a:before{
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+  }
+  .nav-links li.front a:hover:before{
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+  .nav-links li.center a:before{
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+  }
+  .nav-links li.center a:hover:before{
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+  .mama{ /*Design of the box */
+    width: 800px;
+    height: 400px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    color: whitesmoke;
+    padding: 0;
+    opacity: 0;
+    animation: fadein 2s ease-in forwards;
+    position:  relative; top: -10vh; right: -5vw;
+  }
+  @keyframes fadein{
+    from{
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .flex{ /*Flex box*/
+    height: 50px; 
+    width: 500px; 
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5), 0 -4px 4px -4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    font-weight:bolder;
+  }
+  .foot1{ /*CSS of credits*/
+    border-top:3px solid rgb(255, 255, 255);
+    position: relative; right: -25vw; top: -120vh;
+    width: 50%;
+    color: white;
+    text-align: center;
+  }
+  .line{
+    border-left: 4px solid rgb(255, 255, 255);
+    height: 300px;
+     position: relative; bottom: -25vh; right: -3vw;
+     margin: 0;
+     padding: 0;
+
+  }
+  .line2{
+    border-left: 4px solid rgb(255, 255, 255);
+    height: 300px;
+     position: relative; right: -3vw;
+     margin: 0;
+     padding: 0;
+
+  }
+  .line3{
+    border-left: 4px solid rgb(255, 255, 255);
+    height: 300px;
+    position: relative; right: -3vw; top: -25vh;
+    margin: 0;
+     padding: 0;
+
+  }
+  .mama2{ /*CSS of the First image to fit */
+    width: 400px;
+    height: 400px; 
+    margin: 0;
+    border-radius: 100px 20px;
+    padding: 0;
+    position: relative; top: -260vh; left: -5vw;
+    float: right;
+
+  }
+  .mama2:hover{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.103);
+    text-decoration: none;
+  }
+  .logo{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    left: 1.9rem;
+  }
+  .me{ /*CSS of the First image to fit */
+    width: 400px;
+    height: 400px; 
+    margin: 0;
+    border-radius: 20px 100px;
+    padding: 0;
+    position: relative; right: -21vw; top: -192vh;
+    float: right;
+  }
+  .with{ /*CSS of the First image to fit */
+    width: 400px;
+    height: 400px; 
+    margin: 0;
+    border-radius: 100px 20px;
+    padding: 0;
+    position: relative; right: -68vw; top: -125vh;
+  }
+  .me2{ /*Design of the box */
+    width: 800px;
+    height: 400px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    color: whitesmoke;
+    padding: 0;
+    opacity: 0;
+    animation: fadein 2s ease-in forwards;
+    position:  relative; top: -30vh; right: -5vw;
+  }
+  .with2{ /*Design of the box */
+    width: 800px;
+    height: 400px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    color: whitesmoke;
+    padding: 0;
+    opacity: 0;
+    animation: fadein 2s ease-in forwards;
+    position:  relative; top: -55vh; right: -5vw;
+  } 

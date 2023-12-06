@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+}
+
+body{
+  background-image: url(forest.jpg);
+  background-size: cover; 
+  overflow: hidden;
+}
+.welcome{ /*CSS of the introduction text*/
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+  float: left;
+  display: flex;
+  position: relative;
+  bottom: -30vh;
+  right: -5vw;
+  font-size: 50px;
+  opacity: 0;
+  animation: fadein 2s ease-in forwards;
+  font-weight: 1000;
+}
+.picture{ /*CSS of the Image */
+  width: 35%;
+  height: 35%;
+  float: right;
+  position: relative;
+  top: 10vh;
+  right: 7vw;
+  border-radius: 50%;
+  filter: brightness(150%);
+}
+.nav-links{ /*This is where i position my navigation buttons */
+  display: flex;
+  align-items: center;
+ text-align: center;  
+  padding: 20px 500px;
+  border-radius: 12px;
+  float: left;
+  position: relative; top: -577px; left: 508px 
+}
+.nav-links li{
+  list-style: none;
+  margin: 0 30px;
+}
+.nav-links li a{
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  font-family: fantasy;
+  text-decoration: none;
+}
+.nav-links li a:before{ /* Hover effects*/
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #ffffff;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before{
+  width: 100%;
+}
+.nav-links li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease-out;
+}
+.nav-links li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.nav-links li.upward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+.nav-links li.upward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.nav-links li.front a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+.nav-links li.front a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.nav-links li.center a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+.nav-links li.center a:hover:before{
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.border{
+  border-right: 4px solid whitesmoke;
+  height: 15vw; 
+  position: relative;
+  float: left;
+  left: -95vw;
+  top: -41vh;
+  padding: 0;
+}
+.butt{ /*CSS for the "About" button */
+  text-decoration: none;
+  height: 40px;
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+  background-color: rgba(167, 248, 221, 0);
+  border-color:rgb(0, 0, 0);
+  border-width: 1px ;
+  font-family: 'Poppins', sans-serif;
+  font-weight:800;
+  font-size: 25px;
+  border-radius: 1%;
+  position: relative;
+  top: 65vh;
+  left: -33vw;
+  animation: fadein 2s ease-in forwards;
+}
+
+.butt:hover {
+  color: black;
+ background-color: rgb(255, 255, 255);
+}
+.butt a{
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadein{ /*Transition animation */
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
